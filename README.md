@@ -1,74 +1,77 @@
-# Hairstyle Try-on · 发型试戴
+# Hairstyle Try-on
+
+English | [简体中文](README.zh-CN.md)
 
 A Codex skill for realistic hairstyle recommendations and selfie-based try-on references.
 
-提供一张自拍，可附目标发型图。Codex 根据头发条件和打理习惯推荐 4–6 款完整方案，用户多选后，通过内置 imagegen 逐款生成试戴参考照，并附对比页面和给理发师看的发型需求卡。
+Provide a selfie and, optionally, a target hairstyle image. Codex recommends 4–6 complete styles based on your hair and daily styling routine. After you select your favorites, built-in imagegen creates a separate try-on photo for each style, along with a comparison page and a plain-language brief to share with your hairdresser.
 
-## 工作流程
+## Workflow
 
-1. 提供清晰正面自拍；侧面、背面与目标发型图可选。
-2. 用选项填写头发条件、烫染接受度、打理时间和禁忌；允许“不清楚”与自由表达。
-3. 浏览带参考图、推荐理由、实现条件和来源链接的候选。
-4. 默认选 1–3 款，每款生成一张；明确要求更多时可扩展。
-5. 查看独立图片和并排对比，再按编号微调。
+1. Provide a clear front-facing selfie. Side, back, and target hairstyle photos are optional.
+2. Choose options describing your hair, willingness to perm or color it, daily styling time, and things to avoid. “Not sure” and free-text answers are welcome.
+3. Browse candidates with reference images, recommendation reasons, practical requirements, and source links.
+4. Select 1–3 styles by default, with one generated photo per style. You can explicitly request more.
+5. Review the individual photos and side-by-side comparison, then request refinements by style ID.
 
-发型按长度和特征组织，不限男女。有目标图时优先适配本人条件；每款生成均以原始自拍为本人外貌依据。
+Styles are organized by length and features, for all genders. A target hairstyle is adapted to your own hair conditions. Every generation uses your original selfie as the reference for your appearance.
 
-## 运行条件
+## Requirements
 
-本仓库是技能指令，不包含图像模型、API 服务或插件实现。需要可运行本地 skill、查看图片，并能调用内置 imagegen 的 Codex 环境。
+This repository contains skill instructions, not an image model, API service, or plugin implementation. It requires a Codex environment that supports local skills, image viewing, and built-in imagegen.
 
-| 能力 | 用途 | 不可用时 |
+| Capability | Purpose | When unavailable |
 | --- | --- | --- |
-| Codex 内置 imagegen | 生成与修改试戴照 | 保留方案并说明情况；不会自动改用付费 API |
-| Exa（可选） | 优先搜索和读取发型来源 | 回退普通网页搜索 |
-| TypeSafe（可选） | 候选文本筛选、排序 | 由 Codex 完成筛选 |
-| Interactive Form Save（可选） | 条件填写、多选与提交读回 | 使用编号选项和自由回复 |
+| Codex built-in imagegen | Generate and edit try-on photos | Keep the proposed styles and explain the limitation; never automatically switch to a paid API |
+| Exa (optional) | Preferred search and retrieval of hairstyle sources | Fall back to ordinary web search |
+| TypeSafe (optional) | Filter and rank candidate descriptions | Codex handles the selection |
+| Interactive Form Save (optional) | Collect preferences, multiple selections, and read back submitted answers | Use numbered choices and free-text replies |
 
-内置 imagegen 路径不要求配置 `OPENAI_API_KEY`。外部工具的可用性、额度和使用条款由各自服务决定；本仓库不附带这些服务的访问权限。
+The built-in imagegen workflow does not require an `OPENAI_API_KEY`. Availability, quotas, and terms for external tools depend on their respective services; this repository does not grant access to them.
 
-## 安装
+## Installation
 
-将本仓库克隆或解压为 `hairstyle-tryon` 文件夹，放入你的 Codex 已配置的 skills 目录，使路径为：
+Clone or extract this repository into a `hairstyle-tryon` folder inside your configured Codex skills directory:
 
 ```text
-你的 skills 目录/
+your-skills-directory/
 └── hairstyle-tryon/
     ├── SKILL.md
     ├── README.md
+    ├── README.zh-CN.md
     └── LICENSE
 ```
 
-已设置 `CODEX_HOME` 的环境可使用其 `skills` 子目录。安装前检查同名文件夹，保留已有修改；不要将文件套在两层 `hairstyle-tryon` 目录中。
+If `CODEX_HOME` is configured, you can use its `skills` subdirectory. Check for an existing folder and preserve any local changes before installing. Avoid nesting the files inside two `hairstyle-tryon` folders.
 
-## 使用
+## Usage
 
-在 Codex 中调用技能并附上照片，例如：
+Invoke the skill in Codex and attach your photo. For example:
 
 ```text
-使用 $hairstyle-tryon，帮我找适合日常通勤的发型。
-保留原发色，不烫发，每天愿意花约 5 分钟打理。
-我会上传正面自拍，先让我多选方案，再生成试戴照。
+Use $hairstyle-tryon to help me find a hairstyle for everyday work.
+Keep my current hair color, no perm, and about 5 minutes of styling per day.
+I'll upload a front-facing selfie. Let me choose multiple styles before generating try-on photos.
 ```
 
-有目标发型时可一起上传，并说明哪些特征最想保留。后续可以直接说：“把 H02 的刘海稍微缩短，其余保持不变。”
+If you have a target hairstyle image, attach it too and describe the features you most want to keep. You can then request changes such as: “Make the bangs in H02 a little shorter and keep everything else the same.”
 
-## 交付
+## Deliverables
 
-默认保存到运行任务工作区的 `output/hairstyle-tryon/本次唯一标识/`，也可指定其他目录：
+By default, outputs are saved under `output/hairstyle-tryon/<unique-run-id>/` in the task workspace. You can specify another directory.
 
-- 每款独立试戴照，按方案编号和版本命名。
-- `comparison.html`：引用原照与成图的并排对比页面。
-- `notes.md`：来源、生成提示、检查结果，以及每款发型需求卡。
+- A separate try-on photo for each style, named by style ID and version.
+- `comparison.html`: a side-by-side comparison page referencing the original and generated photos.
+- `notes.md`: sources, generation prompts, review results, and a brief for each hairstyle.
 
-“发型需求卡”是一段可以直接给理发师看的要求：想保留哪些特征、接受哪些改变、平时如何打理，以及需要现场确认的条件。它不是保证效果的剪发处方。
+The hairstyle brief is a plain-language note you can show your hairdresser: which features to keep, which changes you accept, your daily styling routine, and what needs an in-person assessment. It is not a cutting prescription or a guarantee of the result.
 
-## 验证与图片使用
+## Validation and image use
 
-当前为 `v0.1.0`：已完成 skill 结构检查，尚未完成真实自拍的端到端出图验证。生成结果用于视觉参考，实际剪发可行性需要结合现场头发条件判断；身份保持通过提示约束和目视检查完成，不承诺像素级不变。
+The current skill version is `v0.1.0`. Skill structure checks have passed; end-to-end image generation with a real selfie has not yet been validated. Generated photos are visual references. Whether a haircut is achievable depends on an in-person assessment of your hair. Appearance preservation relies on prompt constraints and visual review, with no guarantee of pixel-level consistency.
 
-仓库只包含技能与文档，没有用户自拍或第三方参考图。运行时照片仅用于当次请求；发布自己的改动前，请检查暂存内容，避免提交照片、生成结果或凭据。输出目录及常见本地输入目录已由 `.gitignore` 忽略。
+The repository contains only the skill and documentation, with no user selfies or third-party reference images. Photos supplied during a run are used only for that request. Before publishing your changes, review staged files to avoid committing photos, generated outputs, or credentials. Output folders and common local input folders are excluded by `.gitignore`.
 
-## 许可证
+## License
 
-本仓库的技能指令与文档采用 [MIT License](LICENSE)，标准文本来源见 [Open Source Initiative](https://opensource.org/license/mit)。用户照片、网络参考图片与外部服务不因本仓库使用 MIT 而获得新的授权。
+The skill instructions and documentation are licensed under the [MIT License](LICENSE). See the [Open Source Initiative](https://opensource.org/license/mit) for the standard license text. This license does not grant additional rights to user photos, online reference images, or external services.
