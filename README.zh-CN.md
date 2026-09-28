@@ -1,6 +1,6 @@
 # Hairstyle Try-on · 发型试戴
 
-[English](README.md) | 简体中文
+[English](README.md) | 简体中文 | [Español](README.es.md) | [Français](README.fr.md) | [Português](README.pt.md) | [Русский](README.ru.md) | [한국어](README.ko.md) | [日本語](README.ja.md)
 
 一个用于现实换发参考的 Codex skill，根据自拍推荐发型并生成试戴参考照。
 
@@ -39,6 +39,12 @@
     ├── SKILL.md
     ├── README.md
     ├── README.zh-CN.md
+    ├── README.es.md
+    ├── README.fr.md
+    ├── README.pt.md
+    ├── README.ru.md
+    ├── README.ko.md
+    ├── README.ja.md
     └── LICENSE
 ```
 

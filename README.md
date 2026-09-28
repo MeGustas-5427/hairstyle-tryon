@@ -1,6 +1,6 @@
 # Hairstyle Try-on
 
-English | [简体中文](README.zh-CN.md)
+English | [简体中文](README.zh-CN.md) | [Español](README.es.md) | [Français](README.fr.md) | [Português](README.pt.md) | [Русский](README.ru.md) | [한국어](README.ko.md) | [日本語](README.ja.md)
 
 A Codex skill for realistic hairstyle recommendations and selfie-based try-on references.
 
@@ -39,6 +39,12 @@ your-skills-directory/
     ├── SKILL.md
     ├── README.md
     ├── README.zh-CN.md
+    ├── README.es.md
+    ├── README.fr.md
+    ├── README.pt.md
+    ├── README.ru.md
+    ├── README.ko.md
+    ├── README.ja.md
     └── LICENSE
 ```
 
