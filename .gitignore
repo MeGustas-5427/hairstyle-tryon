@@ -1,0 +1,10 @@
+/output/
+/outputs/
+/inputs/
+/photos/
+/dist/
+.env
+.env.*
+*.zip
+.DS_Store
+Thumbs.db
