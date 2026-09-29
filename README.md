@@ -78,6 +78,10 @@ The current skill version is `v0.1.0`. Skill structure checks have passed; end-t
 
 The repository contains only the skill and documentation, with no user selfies or third-party reference images. Photos supplied during a run are used only for that request. Before publishing your changes, review staged files to avoid committing photos, generated outputs, or credentials. Output folders and common local input folders are excluded by `.gitignore`.
 
+## Contact
+
+QQ group: `1094787834`.
+
 ## License
 
 The skill instructions and documentation are licensed under the [MIT License](LICENSE). See the [Open Source Initiative](https://opensource.org/license/mit) for the standard license text. This license does not grant additional rights to user photos, online reference images, or external services.

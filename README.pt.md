@@ -78,6 +78,10 @@ A versão atual da skill é `v0.1.0`. As verificações de estrutura foram concl
 
 O repositório contém apenas a skill e a documentação, sem selfies de usuários ou imagens de referência de terceiros. As fotos enviadas durante uma execução são usadas apenas para aquela solicitação. Antes de publicar suas alterações, confira os arquivos preparados para o commit para evitar incluir fotos, resultados gerados ou credenciais. As pastas de saída e as pastas locais de entrada mais comuns são excluídas pelo `.gitignore`.
 
+## Contato
+
+Grupo no QQ: `1094787834`.
+
 ## Licença
 
 As instruções da skill e a documentação são distribuídas sob a [licença MIT](LICENSE). O texto padrão está disponível na [Open Source Initiative](https://opensource.org/license/mit). Essa licença não concede direitos adicionais sobre fotos de usuários, imagens de referência da Internet ou serviços externos.
