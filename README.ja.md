@@ -14,9 +14,9 @@
 
 | 元の写真 | AI試着 |
 | --- | --- |
-| **P02**<br><a href="examples/p02/original.jpg"><img src="examples/p02/original.jpg" alt="P02 元の写真" width="320"></a> | **H02 · カールした前髪**<br><a href="examples/p02/h02.png"><img src="examples/p02/h02.png" alt="P02 AI試着: カールした前髪" width="320"></a> |
-| **W02**<br><a href="examples/w02/original.jpg"><img src="examples/w02/original.jpg" alt="W02 元の写真" width="320"></a> | **H01 · 暖かい栗色のフレンチボブ**<br><a href="examples/w02/h01.png"><img src="examples/w02/h01.png" alt="W02 AI試着: 暖かい栗色のフレンチボブ" width="320"></a> |
-| **W03**<br><a href="examples/w03/original.jpg"><img src="examples/w03/original.jpg" alt="W03 元の写真" width="320"></a> | **H04 · 眼鏡を維持したストレートボブ**<br><a href="examples/w03/h04.png"><img src="examples/w03/h04.png" alt="W03 AI試着: 眼鏡を維持したストレートボブ" width="320"></a> |
+| **P02**<br><a href="examples/p02/original.webp"><img src="examples/p02/original.webp" alt="P02 元の写真" width="320"></a> | **H02 · カールした前髪**<br><a href="examples/p02/h02.webp"><img src="examples/p02/h02.webp" alt="P02 AI試着: カールした前髪" width="320"></a> |
+| **W02**<br><a href="examples/w02/original.webp"><img src="examples/w02/original.webp" alt="W02 元の写真" width="320"></a> | **H01 · 暖かい栗色のフレンチボブ**<br><a href="examples/w02/h01.webp"><img src="examples/w02/h01.webp" alt="W02 AI試着: 暖かい栗色のフレンチボブ" width="320"></a> |
+| **W03**<br><a href="examples/w03/original.webp"><img src="examples/w03/original.webp" alt="W03 元の写真" width="320"></a> | **H04 · 眼鏡を維持したストレートボブ**<br><a href="examples/w03/h04.webp"><img src="examples/w03/h04.webp" alt="W03 AI試着: 眼鏡を維持したストレートボブ" width="320"></a> |
 
 ## 進め方
 

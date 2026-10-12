@@ -14,9 +14,9 @@
 
 | 原照 | AI 试戴效果 |
 | --- | --- |
-| **P02**<br><a href="examples/p02/original.jpg"><img src="examples/p02/original.jpg" alt="P02 原照" width="320"></a> | **H02 · 蓬松卷刘海**<br><a href="examples/p02/h02.png"><img src="examples/p02/h02.png" alt="P02 AI 试戴效果: 蓬松卷刘海" width="320"></a> |
-| **W02**<br><a href="examples/w02/original.jpg"><img src="examples/w02/original.jpg" alt="W02 原照" width="320"></a> | **H01 · 暖栗棕法式波波**<br><a href="examples/w02/h01.png"><img src="examples/w02/h01.png" alt="W02 AI 试戴效果: 暖栗棕法式波波" width="320"></a> |
-| **W03**<br><a href="examples/w03/original.jpg"><img src="examples/w03/original.jpg" alt="W03 原照" width="320"></a> | **H04 · 保留眼镜的顺直波波**<br><a href="examples/w03/h04.png"><img src="examples/w03/h04.png" alt="W03 AI 试戴效果: 保留眼镜的顺直波波" width="320"></a> |
+| **P02**<br><a href="examples/p02/original.webp"><img src="examples/p02/original.webp" alt="P02 原照" width="320"></a> | **H02 · 蓬松卷刘海**<br><a href="examples/p02/h02.webp"><img src="examples/p02/h02.webp" alt="P02 AI 试戴效果: 蓬松卷刘海" width="320"></a> |
+| **W02**<br><a href="examples/w02/original.webp"><img src="examples/w02/original.webp" alt="W02 原照" width="320"></a> | **H01 · 暖栗棕法式波波**<br><a href="examples/w02/h01.webp"><img src="examples/w02/h01.webp" alt="W02 AI 试戴效果: 暖栗棕法式波波" width="320"></a> |
+| **W03**<br><a href="examples/w03/original.webp"><img src="examples/w03/original.webp" alt="W03 原照" width="320"></a> | **H04 · 保留眼镜的顺直波波**<br><a href="examples/w03/h04.webp"><img src="examples/w03/h04.webp" alt="W03 AI 试戴效果: 保留眼镜的顺直波波" width="320"></a> |
 
 ## 工作流程
 

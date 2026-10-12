@@ -14,9 +14,9 @@ Resultados de 4 pruebas con fotos de bancos de imágenes: 12 imágenes generadas
 
 | Original | Prueba con IA |
 | --- | --- |
-| **P02**<br><a href="examples/p02/original.jpg"><img src="examples/p02/original.jpg" alt="P02 Original" width="320"></a> | **H02 · Flequillo rizado**<br><a href="examples/p02/h02.png"><img src="examples/p02/h02.png" alt="P02 Prueba con IA: Flequillo rizado" width="320"></a> |
-| **W02**<br><a href="examples/w02/original.jpg"><img src="examples/w02/original.jpg" alt="W02 Original" width="320"></a> | **H01 · Bob francés castaño cálido**<br><a href="examples/w02/h01.png"><img src="examples/w02/h01.png" alt="W02 Prueba con IA: Bob francés castaño cálido" width="320"></a> |
-| **W03**<br><a href="examples/w03/original.jpg"><img src="examples/w03/original.jpg" alt="W03 Original" width="320"></a> | **H04 · Bob liso con gafas**<br><a href="examples/w03/h04.png"><img src="examples/w03/h04.png" alt="W03 Prueba con IA: Bob liso con gafas" width="320"></a> |
+| **P02**<br><a href="examples/p02/original.webp"><img src="examples/p02/original.webp" alt="P02 Original" width="320"></a> | **H02 · Flequillo rizado**<br><a href="examples/p02/h02.webp"><img src="examples/p02/h02.webp" alt="P02 Prueba con IA: Flequillo rizado" width="320"></a> |
+| **W02**<br><a href="examples/w02/original.webp"><img src="examples/w02/original.webp" alt="W02 Original" width="320"></a> | **H01 · Bob francés castaño cálido**<br><a href="examples/w02/h01.webp"><img src="examples/w02/h01.webp" alt="W02 Prueba con IA: Bob francés castaño cálido" width="320"></a> |
+| **W03**<br><a href="examples/w03/original.webp"><img src="examples/w03/original.webp" alt="W03 Original" width="320"></a> | **H04 · Bob liso con gafas**<br><a href="examples/w03/h04.webp"><img src="examples/w03/h04.webp" alt="W03 Prueba con IA: Bob liso con gafas" width="320"></a> |
 
 ## Cómo funciona
 
