@@ -6,6 +6,18 @@ Uma skill do Codex para receber recomendações realistas de penteados e experim
 
 Envie uma selfie e, se quiser, uma imagem do penteado desejado. O Codex recomenda 4–6 propostas completas com base nas características do seu cabelo e na sua rotina diária. Depois de escolher suas favoritas, o imagegen integrado gera uma foto de teste para cada proposta, além de uma página de comparação e uma ficha em linguagem simples para compartilhar com seu cabeleireiro ou cabeleireira.
 
+## Exemplos
+
+Resultados de 4 testes com fotos de bancos de imagens: 12 imagens geradas por IA. São simulações, não fotos de cortes reais antes e depois nem recomendações das pessoas retratadas. W02 inclui expansão da tela para baixo; pescoço, roupas e fundo adicionados são inferidos pela IA.
+
+[Ver os 12 resultados, comparações e créditos](examples/README.md)
+
+| Original | Teste com IA |
+| --- | --- |
+| **P02**<br><a href="examples/p02/original.jpg"><img src="examples/p02/original.jpg" alt="P02 Original" width="320"></a> | **H02 · Franja cacheada**<br><a href="examples/p02/h02.png"><img src="examples/p02/h02.png" alt="P02 Teste com IA: Franja cacheada" width="320"></a> |
+| **W02**<br><a href="examples/w02/original.jpg"><img src="examples/w02/original.jpg" alt="W02 Original" width="320"></a> | **H01 · Bob francês castanho quente**<br><a href="examples/w02/h01.png"><img src="examples/w02/h01.png" alt="W02 Teste com IA: Bob francês castanho quente" width="320"></a> |
+| **W03**<br><a href="examples/w03/original.jpg"><img src="examples/w03/original.jpg" alt="W03 Original" width="320"></a> | **H04 · Bob liso com óculos**<br><a href="examples/w03/h04.png"><img src="examples/w03/h04.png" alt="W03 Teste com IA: Bob liso com óculos" width="320"></a> |
+
 ## Como funciona
 
 1. Envie uma selfie nítida, de frente. Fotos de perfil, da parte de trás da cabeça e do penteado desejado são opcionais.
@@ -45,6 +57,7 @@ seu-diretorio-de-skills/
     ├── README.ru.md
     ├── README.ko.md
     ├── README.ja.md
+    ├── examples/
     └── LICENSE
 ```
 
@@ -74,9 +87,9 @@ A ficha do penteado é uma nota simples para mostrar no salão: quais caracterí
 
 ## Validação e uso de imagens
 
-A versão atual da skill é `v0.1.0`. As verificações de estrutura foram concluídas com sucesso; a geração de imagens de ponta a ponta com uma selfie real ainda não foi validada. As fotos geradas servem como referência visual. A viabilidade do corte depende de uma avaliação presencial do cabelo. A preservação da sua aparência depende das restrições nas instruções de geração e da revisão visual, sem garantia de correspondência pixel a pixel.
+A versão da skill é `v0.1.0`. Quatro testes com fotos de bancos de imagens produziram 12 resultados com imagegen integrado em 2026-09-28 e 2026-10-12; as verificações visuais e dos arquivos estão na [galeria](examples/README.md). O fluxo com uma selfie do próprio usuário e os resultados de cortes reais ainda não foram validados. A preservação da aparência depende das instruções e da revisão visual, sem garantia de correspondência pixel a pixel.
 
-O repositório contém apenas a skill e a documentação, sem selfies de usuários ou imagens de referência de terceiros. As fotos enviadas durante uma execução são usadas apenas para aquela solicitação. Antes de publicar suas alterações, confira os arquivos preparados para o commit para evitar incluir fotos, resultados gerados ou credenciais. As pastas de saída e as pastas locais de entrada mais comuns são excluídas pelo `.gitignore`.
+O repositório contém a skill, documentação e demonstrações selecionadas em `examples/`, sujeitas aos [créditos e termos de uso das imagens](examples/CREDITS.md). Não contém selfies de usuários nem formulários privados. As fotos de cada execução são usadas para aquela solicitação. Antes de publicar, confira os arquivos preparados para o commit para evitar incluir fotos privadas, resultados sem relação ou credenciais. As pastas de saída e de entrada local mais comuns continuam excluídas pelo `.gitignore`.
 
 ## Contato
 

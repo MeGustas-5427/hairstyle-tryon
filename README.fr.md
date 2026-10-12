@@ -6,6 +6,18 @@ Une skill Codex pour obtenir des recommandations de coiffures réalistes et les 
 
 Fournissez un selfie et, si vous le souhaitez, une image de la coiffure visée. Codex recommande 4–6 propositions complètes selon les caractéristiques de vos cheveux et votre routine quotidienne. Une fois vos préférées sélectionnées, imagegen intégré génère une photo d’essai pour chaque proposition, accompagnée d’une page comparative et d’une fiche en langage courant à partager avec votre coiffeur ou coiffeuse.
 
+## Exemples
+
+Résultats de 4 tests avec des photos de banques d’images : 12 essais générés par IA. Ce sont des simulations, pas des photos avant/après de coupes réelles ni des recommandations des personnes représentées. W02 inclut une extension vers le bas ; le cou, les vêtements et le fond ajoutés sont inférés par l’IA.
+
+[Voir les 12 résultats, comparaisons et crédits photo](examples/README.md)
+
+| Original | Essai par IA |
+| --- | --- |
+| **P02**<br><a href="examples/p02/original.jpg"><img src="examples/p02/original.jpg" alt="P02 Original" width="320"></a> | **H02 · Frange bouclée**<br><a href="examples/p02/h02.png"><img src="examples/p02/h02.png" alt="P02 Essai par IA: Frange bouclée" width="320"></a> |
+| **W02**<br><a href="examples/w02/original.jpg"><img src="examples/w02/original.jpg" alt="W02 Original" width="320"></a> | **H01 · Carré français châtain chaud**<br><a href="examples/w02/h01.png"><img src="examples/w02/h01.png" alt="W02 Essai par IA: Carré français châtain chaud" width="320"></a> |
+| **W03**<br><a href="examples/w03/original.jpg"><img src="examples/w03/original.jpg" alt="W03 Original" width="320"></a> | **H04 · Carré lisse avec lunettes**<br><a href="examples/w03/h04.png"><img src="examples/w03/h04.png" alt="W03 Essai par IA: Carré lisse avec lunettes" width="320"></a> |
+
 ## Déroulement
 
 1. Fournissez un selfie net, de face. Les photos de profil, de l’arrière de la tête et de la coiffure souhaitée sont facultatives.
@@ -45,6 +57,7 @@ votre-repertoire-de-skills/
     ├── README.ru.md
     ├── README.ko.md
     ├── README.ja.md
+    ├── examples/
     └── LICENSE
 ```
 
@@ -74,9 +87,9 @@ La fiche de coiffure est une note simple à montrer en salon : les caractéristi
 
 ## Validation et utilisation des images
 
-La version actuelle de la skill est `v0.1.0`. Les vérifications de structure ont réussi ; la génération d’images de bout en bout avec un vrai selfie n’a pas encore été validée. Les images générées servent de références visuelles. La faisabilité d’une coupe dépend d’une évaluation de vos cheveux en personne. La préservation de votre apparence repose sur les contraintes des consignes de génération et sur une vérification visuelle, sans garantie de conservation à l’identique au pixel près.
+La version de la skill est `v0.1.0`. Quatre tests avec des photos de banques d’images ont produit 12 résultats via imagegen intégré les 2026-09-28 et 2026-10-12 ; les vérifications visuelles et des fichiers sont décrites dans la [galerie](examples/README.md). Le parcours avec un selfie personnel et les résultats de coupes réelles restent à valider. La préservation de l’apparence repose sur les consignes et une vérification visuelle, sans garantie au pixel près.
 
-Le dépôt contient uniquement la skill et sa documentation, sans selfies d’utilisateurs ni images de référence de tiers. Les photos fournies pendant une session ne sont utilisées que pour cette demande. Avant de publier vos modifications, vérifiez les fichiers préparés pour le commit afin d’éviter d’inclure des photos, des résultats générés ou des identifiants d’accès. Les dossiers de sortie et les dossiers locaux d’entrée courants sont exclus par `.gitignore`.
+Le dépôt contient la skill, sa documentation et des démonstrations sélectionnées dans `examples/`, soumises aux [crédits et conditions d’utilisation des images](examples/CREDITS.md). Il ne contient ni selfies d’utilisateurs ni formulaires privés. Les photos d’une session servent à cette demande. Avant de publier, vérifiez les fichiers préparés pour le commit pour éviter d’inclure des photos privées, des résultats sans rapport ou des identifiants d’accès. Les dossiers de sortie et d’entrée locale courants restent exclus par `.gitignore`.
 
 ## Contact
 

@@ -6,6 +6,18 @@ Una skill de Codex para recibir recomendaciones realistas de peinados y probarlo
 
 Proporciona un selfi y, si quieres, una imagen del peinado que te gustaría tener. Codex recomienda 4–6 propuestas completas según las características de tu cabello y tu rutina diaria. Después de que elijas tus favoritas, imagegen integrado genera una foto de prueba por propuesta, junto con una página comparativa y una ficha en lenguaje sencillo para compartir con tu peluquero o peluquera.
 
+## Ejemplos
+
+Resultados de 4 pruebas con fotos de bancos de imágenes: 12 imágenes generadas por IA. Son simulaciones, no fotos de cortes reales antes y después ni recomendaciones de las personas retratadas. W02 incluye ampliación del lienzo hacia abajo; el cuello, la ropa y el fondo añadidos son inferidos por IA.
+
+[Ver los 12 resultados, comparaciones y créditos](examples/README.md)
+
+| Original | Prueba con IA |
+| --- | --- |
+| **P02**<br><a href="examples/p02/original.jpg"><img src="examples/p02/original.jpg" alt="P02 Original" width="320"></a> | **H02 · Flequillo rizado**<br><a href="examples/p02/h02.png"><img src="examples/p02/h02.png" alt="P02 Prueba con IA: Flequillo rizado" width="320"></a> |
+| **W02**<br><a href="examples/w02/original.jpg"><img src="examples/w02/original.jpg" alt="W02 Original" width="320"></a> | **H01 · Bob francés castaño cálido**<br><a href="examples/w02/h01.png"><img src="examples/w02/h01.png" alt="W02 Prueba con IA: Bob francés castaño cálido" width="320"></a> |
+| **W03**<br><a href="examples/w03/original.jpg"><img src="examples/w03/original.jpg" alt="W03 Original" width="320"></a> | **H04 · Bob liso con gafas**<br><a href="examples/w03/h04.png"><img src="examples/w03/h04.png" alt="W03 Prueba con IA: Bob liso con gafas" width="320"></a> |
+
 ## Cómo funciona
 
 1. Proporciona un selfi frontal y nítido. Las fotos de perfil, de la parte posterior de la cabeza y del peinado deseado son opcionales.
@@ -45,6 +57,7 @@ tu-directorio-de-skills/
     ├── README.ru.md
     ├── README.ko.md
     ├── README.ja.md
+    ├── examples/
     └── LICENSE
 ```
 
@@ -74,9 +87,9 @@ La ficha del peinado es una nota sencilla que puedes mostrar en la peluquería: 
 
 ## Validación y uso de imágenes
 
-La versión actual de la skill es `v0.1.0`. Las comprobaciones de estructura se han superado; todavía no se ha validado el proceso completo de generación de imágenes con un selfi real. Las fotos generadas sirven como referencia visual. La viabilidad del corte depende de una evaluación presencial del cabello. La conservación de tu apariencia se basa en restricciones dentro de las instrucciones de generación y en una revisión visual, sin garantía de coincidencia píxel a píxel.
+La versión de la skill es `v0.1.0`. Cuatro pruebas con fotos de bancos de imágenes produjeron 12 resultados con imagegen integrado el 2026-09-28 y el 2026-10-12; las comprobaciones visuales y de archivos se documentan en la [galería](examples/README.md). El proceso con un selfi del propio usuario y los resultados de cortes reales siguen sin validarse. La conservación de la apariencia depende de las instrucciones y de la revisión visual, sin garantía de coincidencia píxel a píxel.
 
-El repositorio solo contiene la skill y su documentación, sin selfis de usuarios ni imágenes de referencia de terceros. Las fotos proporcionadas durante una ejecución se utilizan únicamente para esa solicitud. Antes de publicar tus cambios, revisa los archivos preparados para el commit para evitar incluir fotos, resultados generados o credenciales. `.gitignore` excluye las carpetas de salida y las carpetas habituales de entrada local.
+El repositorio contiene la skill, documentación y demostraciones seleccionadas en `examples/`, sujetas a sus [créditos y condiciones de uso de imágenes](examples/CREDITS.md). No contiene selfis de usuarios ni formularios privados. Las fotos de cada ejecución se utilizan para esa solicitud. Antes de publicar, revisa los archivos preparados para el commit para evitar incluir fotos privadas, resultados ajenos o credenciales. `.gitignore` sigue excluyendo las carpetas de salida y de entrada local habituales.
 
 ## Contacto
 

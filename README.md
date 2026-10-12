@@ -6,6 +6,18 @@ A Codex skill for realistic hairstyle recommendations and selfie-based try-on re
 
 Provide a selfie and, optionally, a target hairstyle image. Codex recommends 4–6 complete styles based on your hair and daily styling routine. After you select your favorites, built-in imagegen creates a separate try-on photo for each style, along with a comparison page and a plain-language brief to share with your hairdresser.
 
+## Examples
+
+Actual outputs from 4 stock-photo tests: 12 AI try-on images. These are visual simulations, not real haircut before/after photos or endorsements by the people shown. W02 includes downward canvas extension; newly visible neck, clothing and background are AI-inferred.
+
+[View all 12 results, comparisons and photo credits](examples/README.md)
+
+| Original | AI try-on |
+| --- | --- |
+| **P02**<br><a href="examples/p02/original.jpg"><img src="examples/p02/original.jpg" alt="P02 Original" width="320"></a> | **H02 · Curly fringe**<br><a href="examples/p02/h02.png"><img src="examples/p02/h02.png" alt="P02 AI try-on: Curly fringe" width="320"></a> |
+| **W02**<br><a href="examples/w02/original.jpg"><img src="examples/w02/original.jpg" alt="W02 Original" width="320"></a> | **H01 · Warm chestnut French bob**<br><a href="examples/w02/h01.png"><img src="examples/w02/h01.png" alt="W02 AI try-on: Warm chestnut French bob" width="320"></a> |
+| **W03**<br><a href="examples/w03/original.jpg"><img src="examples/w03/original.jpg" alt="W03 Original" width="320"></a> | **H04 · Sleek bob with glasses**<br><a href="examples/w03/h04.png"><img src="examples/w03/h04.png" alt="W03 AI try-on: Sleek bob with glasses" width="320"></a> |
+
 ## Workflow
 
 1. Provide a clear front-facing selfie. Side, back, and target hairstyle photos are optional.
@@ -45,6 +57,7 @@ your-skills-directory/
     ├── README.ru.md
     ├── README.ko.md
     ├── README.ja.md
+    ├── examples/
     └── LICENSE
 ```
 
@@ -74,9 +87,9 @@ The hairstyle brief is a plain-language note you can show your hairdresser: whic
 
 ## Validation and image use
 
-The current skill version is `v0.1.0`. Skill structure checks have passed; end-to-end image generation with a real selfie has not yet been validated. Generated photos are visual references. Whether a haircut is achievable depends on an in-person assessment of your hair. Appearance preservation relies on prompt constraints and visual review, with no guarantee of pixel-level consistency.
+Skill version: `v0.1.0`. Four stock-photo workflows produced 12 images with built-in imagegen on 2026-09-28 and 2026-10-12; visual and file checks are recorded in the [example gallery](examples/README.md). A user-selfie workflow and real haircut results remain unverified. Appearance preservation relies on prompt constraints and visual review, with no guarantee of pixel-level consistency.
 
-The repository contains only the skill and documentation, with no user selfies or third-party reference images. Photos supplied during a run are used only for that request. Before publishing your changes, review staged files to avoid committing photos, generated outputs, or credentials. Output folders and common local input folders are excluded by `.gitignore`.
+The repository contains the skill, documentation and selected stock-photo demonstrations in `examples/`, subject to their [photo credits and image terms](examples/CREDITS.md). It contains no user selfies or private form submissions. Runtime photos are used for that request. Before publishing changes, check staged files for private photos, unrelated outputs or credentials. Runtime output folders and common local input folders remain excluded by `.gitignore`.
 
 ## Contact
 
