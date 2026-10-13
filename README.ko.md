@@ -8,12 +8,16 @@
 
 ## 결과 예시
 
-스톡 사진 4건의 테스트에서 나온 실제 AI 결과 12장입니다. 시각적 시뮬레이션이며 실제 커트 전후 사진이나 사진 속 인물의 추천이 아닙니다. W02는 캔버스를 아래로 확장했으며, 새로 보이는 목·의상·배경은 AI가 추정해 생성한 부분입니다.
+인물 이미지 테스트 8건의 AI 결과 24장이며, 모두 WebP입니다. 최신 업데이트: 2026-10-13. 시각적 시뮬레이션으로, 실제 커트 전후 사진이나 사진 속 인물의 추천이 아닙니다. 원본 출처, 캔버스 확장 및 모델이 복원한 영역은 갤러리에 설명되어 있습니다.
 
-[전체 결과 12장, 원본 비교 및 사진 출처 보기](examples/README.md)
+[전체 결과 24장, 원본 비교 및 이미지 출처 보기](examples/README.md)
 
 | 원본 | AI 가상 체험 |
 | --- | --- |
+| **CNM01**<br><a href="examples/cnm01/original.webp"><img src="examples/cnm01/original.webp" alt="CNM01 원본 이미지" width="320"></a> | **H04 · 부드러운 체스트넛 브라운 컬 울프컷**<br><a href="examples/cnm01/h04.webp"><img src="examples/cnm01/h04.webp" alt="CNM01 AI 가상 체험: 부드러운 체스트넛 브라운 컬 울프컷" width="320"></a> |
+| **JPM01**<br><a href="examples/jpm01/original.webp"><img src="examples/jpm01/original.webp" alt="JPM01 원본 이미지" width="320"></a> | **H03 · 차가운 다크 브라운 나선형 컬**<br><a href="examples/jpm01/h03.webp"><img src="examples/jpm01/h03.webp" alt="JPM01 AI 가상 체험: 차가운 다크 브라운 나선형 컬" width="320"></a> |
+| **KR01**<br><a href="examples/kr01/original.webp"><img src="examples/kr01/original.webp" alt="KR01 원본 이미지" width="320"></a> | **H02 · 밀크티 베이지 브라운 일자 보브**<br><a href="examples/kr01/h02.webp"><img src="examples/kr01/h02.webp" alt="KR01 AI 가상 체험: 밀크티 베이지 브라운 일자 보브" width="320"></a> |
+| **JP01**<br><a href="examples/jp01/original.webp"><img src="examples/jp01/original.webp" alt="JP01 원본 이미지" width="320"></a> | **H03 · 로즈 브라운 쇄골 길이 레이어드 · v2**<br><a href="examples/jp01/h03.webp"><img src="examples/jp01/h03.webp" alt="JP01 AI 가상 체험: 로즈 브라운 쇄골 길이 레이어드 · v2" width="320"></a> |
 | **P02**<br><a href="examples/p02/original.webp"><img src="examples/p02/original.webp" alt="P02 원본" width="320"></a> | **H02 · 컬 앞머리**<br><a href="examples/p02/h02.webp"><img src="examples/p02/h02.webp" alt="P02 AI 가상 체험: 컬 앞머리" width="320"></a> |
 | **W02**<br><a href="examples/w02/original.webp"><img src="examples/w02/original.webp" alt="W02 원본" width="320"></a> | **H01 · 따뜻한 체스트넛 브라운 프렌치 보브**<br><a href="examples/w02/h01.webp"><img src="examples/w02/h01.webp" alt="W02 AI 가상 체험: 따뜻한 체스트넛 브라운 프렌치 보브" width="320"></a> |
 | **W03**<br><a href="examples/w03/original.webp"><img src="examples/w03/original.webp" alt="W03 원본" width="320"></a> | **H04 · 안경을 유지한 스트레이트 보브**<br><a href="examples/w03/h04.webp"><img src="examples/w03/h04.webp" alt="W03 AI 가상 체험: 안경을 유지한 스트레이트 보브" width="320"></a> |
@@ -87,9 +91,9 @@ $hairstyle-tryon으로 평소 출근할 때 어울리는 헤어스타일을 찾�
 
 ## 검증 및 이미지 사용
 
-스킬 버전은 `v0.1.0`입니다. 2026-09-28과 2026-10-12에 스톡 사진 4건으로 내장 imagegen을 사용해 12장의 결과를 만들었으며, 육안 및 파일 검사는 [사례 갤러리](examples/README.md)에 정리했습니다. 사용자 본인의 셀카를 이용한 과정과 실제 커트·염색 결과는 아직 검증하지 않았습니다. 외모 유지는 생성 지침과 육안 검토에 의존하며 픽셀 단위의 동일성을 보장하지 않습니다.
+스킬 버전은 `v0.1.0`입니다. 2026-09-28, 2026-10-12, 2026-10-13에 인물 이미지 8건으로 내장 imagegen을 사용해 최종 결과 24장을 만들었으며, 육안 및 파일 검사는 [사례 갤러리](examples/README.md)에 정리했습니다. 사용자 본인의 셀카를 이용한 과정과 실제 커트·염색 결과는 아직 검증하지 않았습니다. 외모 유지는 생성 지침과 육안 검토에 의존하며 픽셀 단위의 동일성을 보장하지 않습니다.
 
-저장소에는 스킬, 문서 및 `examples/`의 선정된 스톡 사진 시연이 포함되며, 이미지에는 각각의 [출처와 이용 조건](examples/CREDITS.md)이 적용됩니다. 사용자 셀카나 비공개 설문 기록은 포함하지 않습니다. 실행 중 제공된 사진은 해당 요청에 사용합니다. 공개 전에 커밋할 파일을 확인해 개인 사진, 관련 없는 결과, 인증 정보가 포함되지 않도록 하세요. 실행 출력 폴더와 일반적인 로컬 입력 폴더는 계속 `.gitignore`로 제외합니다.
+저장소에는 스킬, 문서 및 `examples/`의 선정된 인물 이미지 시연이 포함되며, 이미지에는 각각의 [출처와 이용 조건](examples/CREDITS.md)이 적용됩니다. 사용자 셀카나 비공개 설문 기록은 포함하지 않습니다. 실행 중 제공된 사진은 해당 요청에 사용합니다. 공개 전에 커밋할 파일을 확인해 개인 사진, 관련 없는 결과, 인증 정보가 포함되지 않도록 하세요. 실행 출력 폴더와 일반적인 로컬 입력 폴더는 계속 `.gitignore`로 제외합니다.
 
 ## 연락처
 

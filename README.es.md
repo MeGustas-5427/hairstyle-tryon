@@ -8,12 +8,16 @@ Proporciona un selfi y, si quieres, una imagen del peinado que te gustaría tene
 
 ## Ejemplos
 
-Resultados de 4 pruebas con fotos de bancos de imágenes: 12 imágenes generadas por IA. Son simulaciones, no fotos de cortes reales antes y después ni recomendaciones de las personas retratadas. W02 incluye ampliación del lienzo hacia abajo; el cuello, la ropa y el fondo añadidos son inferidos por IA.
+8 casos de prueba con retratos y 24 resultados de IA, todos en WebP. Última actualización: 2026-10-13. Son simulaciones visuales, no fotos de cortes reales antes y después ni recomendaciones de las personas representadas. La galería explica el origen de las imágenes, las ampliaciones del encuadre y las zonas reconstruidas.
 
-[Ver los 12 resultados, comparaciones y créditos](examples/README.md)
+[Ver los 24 resultados, comparaciones y créditos](examples/README.md)
 
 | Original | Prueba con IA |
 | --- | --- |
+| **CNM01**<br><a href="examples/cnm01/original.webp"><img src="examples/cnm01/original.webp" alt="CNM01 Imagen original" width="320"></a> | **H04 · Corte wolf rizado castaño suave**<br><a href="examples/cnm01/h04.webp"><img src="examples/cnm01/h04.webp" alt="CNM01 Prueba con IA: Corte wolf rizado castaño suave" width="320"></a> |
+| **JPM01**<br><a href="examples/jpm01/original.webp"><img src="examples/jpm01/original.webp" alt="JPM01 Imagen original" width="320"></a> | **H03 · Rizos en espiral castaño oscuro frío**<br><a href="examples/jpm01/h03.webp"><img src="examples/jpm01/h03.webp" alt="JPM01 Prueba con IA: Rizos en espiral castaño oscuro frío" width="320"></a> |
+| **KR01**<br><a href="examples/kr01/original.webp"><img src="examples/kr01/original.webp" alt="KR01 Imagen original" width="320"></a> | **H02 · Bob recto castaño beige**<br><a href="examples/kr01/h02.webp"><img src="examples/kr01/h02.webp" alt="KR01 Prueba con IA: Bob recto castaño beige" width="320"></a> |
+| **JP01**<br><a href="examples/jp01/original.webp"><img src="examples/jp01/original.webp" alt="JP01 Imagen original" width="320"></a> | **H03 · Capas hasta la clavícula en castaño rosado · v2**<br><a href="examples/jp01/h03.webp"><img src="examples/jp01/h03.webp" alt="JP01 Prueba con IA: Capas hasta la clavícula en castaño rosado · v2" width="320"></a> |
 | **P02**<br><a href="examples/p02/original.webp"><img src="examples/p02/original.webp" alt="P02 Original" width="320"></a> | **H02 · Flequillo rizado**<br><a href="examples/p02/h02.webp"><img src="examples/p02/h02.webp" alt="P02 Prueba con IA: Flequillo rizado" width="320"></a> |
 | **W02**<br><a href="examples/w02/original.webp"><img src="examples/w02/original.webp" alt="W02 Original" width="320"></a> | **H01 · Bob francés castaño cálido**<br><a href="examples/w02/h01.webp"><img src="examples/w02/h01.webp" alt="W02 Prueba con IA: Bob francés castaño cálido" width="320"></a> |
 | **W03**<br><a href="examples/w03/original.webp"><img src="examples/w03/original.webp" alt="W03 Original" width="320"></a> | **H04 · Bob liso con gafas**<br><a href="examples/w03/h04.webp"><img src="examples/w03/h04.webp" alt="W03 Prueba con IA: Bob liso con gafas" width="320"></a> |
@@ -87,7 +91,7 @@ La ficha del peinado es una nota sencilla que puedes mostrar en la peluquería: 
 
 ## Validación y uso de imágenes
 
-La versión de la skill es `v0.1.0`. Cuatro pruebas con fotos de bancos de imágenes produjeron 12 resultados con imagegen integrado el 2026-09-28 y el 2026-10-12; las comprobaciones visuales y de archivos se documentan en la [galería](examples/README.md). El proceso con un selfi del propio usuario y los resultados de cortes reales siguen sin validarse. La conservación de la apariencia depende de las instrucciones y de la revisión visual, sin garantía de coincidencia píxel a píxel.
+La versión de la skill es `v0.1.0`. Ocho pruebas con retratos produjeron 24 resultados finales con imagegen integrado el 2026-09-28, el 2026-10-12 y el 2026-10-13; las comprobaciones visuales y de archivos se documentan en la [galería](examples/README.md). El proceso con un selfi del propio usuario y los resultados de cortes reales siguen sin validarse. La conservación de la apariencia depende de las instrucciones y de la revisión visual, sin garantía de coincidencia píxel a píxel.
 
 El repositorio contiene la skill, documentación y demostraciones seleccionadas en `examples/`, sujetas a sus [créditos y condiciones de uso de imágenes](examples/CREDITS.md). No contiene selfis de usuarios ni formularios privados. Las fotos de cada ejecución se utilizan para esa solicitud. Antes de publicar, revisa los archivos preparados para el commit para evitar incluir fotos privadas, resultados ajenos o credenciales. `.gitignore` sigue excluyendo las carpetas de salida y de entrada local habituales.
 

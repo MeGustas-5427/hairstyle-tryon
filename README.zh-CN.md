@@ -8,12 +8,16 @@
 
 ## 效果展示
 
-来自 4 组网络素材测试的 12 张实际 AI 试戴图，仅供视觉参考，不是真实剪发前后照，也不代表照片人物为本项目背书。W02 包含向下扩图，新增颈肩、衣物和背景为 AI 推测补全。
+8 组人物素材测试，24 张 AI 试戴效果图，全部采用 WebP；更新至 2026-10-13。仅供视觉参考，不是真实剪发前后照，也不代表照片人物为项目背书。底图来源、扩图及模型补全区域均在图库说明。
 
-[查看全部 12 张效果图、原照对比与图片来源](examples/README.md)
+[查看全部 24 张效果图、原始底图对比与图片来源](examples/README.md)
 
 | 原照 | AI 试戴效果 |
 | --- | --- |
+| **CNM01**<br><a href="examples/cnm01/original.webp"><img src="examples/cnm01/original.webp" alt="CNM01 原始底图" width="320"></a> | **H04 · 柔和栗棕中长卷发狼尾**<br><a href="examples/cnm01/h04.webp"><img src="examples/cnm01/h04.webp" alt="CNM01 AI 试戴效果: 柔和栗棕中长卷发狼尾" width="320"></a> |
+| **JPM01**<br><a href="examples/jpm01/original.webp"><img src="examples/jpm01/original.webp" alt="JPM01 原始底图" width="320"></a> | **H03 · 冷调深棕蓬松螺旋卷**<br><a href="examples/jpm01/h03.webp"><img src="examples/jpm01/h03.webp" alt="JPM01 AI 试戴效果: 冷调深棕蓬松螺旋卷" width="320"></a> |
+| **KR01**<br><a href="examples/kr01/original.webp"><img src="examples/kr01/original.webp" alt="KR01 原始底图" width="320"></a> | **H02 · 奶茶米棕齐刘海直线波波**<br><a href="examples/kr01/h02.webp"><img src="examples/kr01/h02.webp" alt="KR01 AI 试戴效果: 奶茶米棕齐刘海直线波波" width="320"></a> |
+| **JP01**<br><a href="examples/jp01/original.webp"><img src="examples/jp01/original.webp" alt="JP01 原始底图" width="320"></a> | **H03 · 玫瑰棕锁骨层次微弯 · v2**<br><a href="examples/jp01/h03.webp"><img src="examples/jp01/h03.webp" alt="JP01 AI 试戴效果: 玫瑰棕锁骨层次微弯 · v2" width="320"></a> |
 | **P02**<br><a href="examples/p02/original.webp"><img src="examples/p02/original.webp" alt="P02 原照" width="320"></a> | **H02 · 蓬松卷刘海**<br><a href="examples/p02/h02.webp"><img src="examples/p02/h02.webp" alt="P02 AI 试戴效果: 蓬松卷刘海" width="320"></a> |
 | **W02**<br><a href="examples/w02/original.webp"><img src="examples/w02/original.webp" alt="W02 原照" width="320"></a> | **H01 · 暖栗棕法式波波**<br><a href="examples/w02/h01.webp"><img src="examples/w02/h01.webp" alt="W02 AI 试戴效果: 暖栗棕法式波波" width="320"></a> |
 | **W03**<br><a href="examples/w03/original.webp"><img src="examples/w03/original.webp" alt="W03 原照" width="320"></a> | **H04 · 保留眼镜的顺直波波**<br><a href="examples/w03/h04.webp"><img src="examples/w03/h04.webp" alt="W03 AI 试戴效果: 保留眼镜的顺直波波" width="320"></a> |
@@ -87,7 +91,7 @@
 
 ## 验证与图片使用
 
-当前 skill 版本为 `v0.1.0`。2026-09-28 与 2026-10-12 已使用内置 imagegen 完成 4 组网络素材试戴、共 12 张成图，目视与文件检查见[完整案例](examples/README.md)。用户本人自拍流程与真实剪染效果尚未验证。外貌保持依靠提示约束和目视检查，不承诺像素级不变。
+当前 skill 版本为 `v0.1.0`。2026-09-28、2026-10-12 与 2026-10-13 已使用内置 imagegen 完成 8 组人物素材试戴、共 24 张最终成图，目视与文件检查见[完整案例](examples/README.md)。用户本人自拍流程与真实剪染效果尚未验证。外貌保持依靠提示约束和目视检查，不承诺像素级不变。
 
 仓库包含技能、文档及 `examples/` 中明确选入的网络素材演示，图片适用各自的[来源与许可](examples/CREDITS.md)；不包含用户自拍或私人表单记录。运行时照片仅用于当次请求。发布改动前，请检查暂存内容，避免提交私人照片、无关生成结果或凭据。运行输出目录及常见本地输入目录仍由 `.gitignore` 忽略。
 

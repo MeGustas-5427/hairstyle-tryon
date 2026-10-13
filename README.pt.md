@@ -8,12 +8,16 @@ Envie uma selfie e, se quiser, uma imagem do penteado desejado. O Codex recomend
 
 ## Exemplos
 
-Resultados de 4 testes com fotos de bancos de imagens: 12 imagens geradas por IA. São simulações, não fotos de cortes reais antes e depois nem recomendações das pessoas retratadas. W02 inclui expansão da tela para baixo; pescoço, roupas e fundo adicionados são inferidos pela IA.
+8 casos de teste com retratos e 24 resultados de IA, todos em WebP. Última atualização: 2026-10-13. São simulações visuais, não fotos de cortes reais antes e depois nem recomendações das pessoas retratadas. A galeria explica a origem das imagens, as ampliações do enquadramento e as áreas reconstruídas.
 
-[Ver os 12 resultados, comparações e créditos](examples/README.md)
+[Ver os 24 resultados, comparações e créditos](examples/README.md)
 
 | Original | Teste com IA |
 | --- | --- |
+| **CNM01**<br><a href="examples/cnm01/original.webp"><img src="examples/cnm01/original.webp" alt="CNM01 Imagem original" width="320"></a> | **H04 · Wolf cut cacheado castanho suave**<br><a href="examples/cnm01/h04.webp"><img src="examples/cnm01/h04.webp" alt="CNM01 Teste com IA: Wolf cut cacheado castanho suave" width="320"></a> |
+| **JPM01**<br><a href="examples/jpm01/original.webp"><img src="examples/jpm01/original.webp" alt="JPM01 Imagem original" width="320"></a> | **H03 · Cachos espirais castanho-escuro frio**<br><a href="examples/jpm01/h03.webp"><img src="examples/jpm01/h03.webp" alt="JPM01 Teste com IA: Cachos espirais castanho-escuro frio" width="320"></a> |
+| **KR01**<br><a href="examples/kr01/original.webp"><img src="examples/kr01/original.webp" alt="KR01 Imagem original" width="320"></a> | **H02 · Bob reto castanho-bege**<br><a href="examples/kr01/h02.webp"><img src="examples/kr01/h02.webp" alt="KR01 Teste com IA: Bob reto castanho-bege" width="320"></a> |
+| **JP01**<br><a href="examples/jp01/original.webp"><img src="examples/jp01/original.webp" alt="JP01 Imagem original" width="320"></a> | **H03 · Camadas na clavícula em castanho rosado · v2**<br><a href="examples/jp01/h03.webp"><img src="examples/jp01/h03.webp" alt="JP01 Teste com IA: Camadas na clavícula em castanho rosado · v2" width="320"></a> |
 | **P02**<br><a href="examples/p02/original.webp"><img src="examples/p02/original.webp" alt="P02 Original" width="320"></a> | **H02 · Franja cacheada**<br><a href="examples/p02/h02.webp"><img src="examples/p02/h02.webp" alt="P02 Teste com IA: Franja cacheada" width="320"></a> |
 | **W02**<br><a href="examples/w02/original.webp"><img src="examples/w02/original.webp" alt="W02 Original" width="320"></a> | **H01 · Bob francês castanho quente**<br><a href="examples/w02/h01.webp"><img src="examples/w02/h01.webp" alt="W02 Teste com IA: Bob francês castanho quente" width="320"></a> |
 | **W03**<br><a href="examples/w03/original.webp"><img src="examples/w03/original.webp" alt="W03 Original" width="320"></a> | **H04 · Bob liso com óculos**<br><a href="examples/w03/h04.webp"><img src="examples/w03/h04.webp" alt="W03 Teste com IA: Bob liso com óculos" width="320"></a> |
@@ -87,7 +91,7 @@ A ficha do penteado é uma nota simples para mostrar no salão: quais caracterí
 
 ## Validação e uso de imagens
 
-A versão da skill é `v0.1.0`. Quatro testes com fotos de bancos de imagens produziram 12 resultados com imagegen integrado em 2026-09-28 e 2026-10-12; as verificações visuais e dos arquivos estão na [galeria](examples/README.md). O fluxo com uma selfie do próprio usuário e os resultados de cortes reais ainda não foram validados. A preservação da aparência depende das instruções e da revisão visual, sem garantia de correspondência pixel a pixel.
+A versão da skill é `v0.1.0`. Oito testes com retratos produziram 24 resultados finais com imagegen integrado em 2026-09-28, 2026-10-12 e 2026-10-13; as verificações visuais e dos arquivos estão na [galeria](examples/README.md). O fluxo com uma selfie do próprio usuário e os resultados de cortes reais ainda não foram validados. A preservação da aparência depende das instruções e da revisão visual, sem garantia de correspondência pixel a pixel.
 
 O repositório contém a skill, documentação e demonstrações selecionadas em `examples/`, sujeitas aos [créditos e termos de uso das imagens](examples/CREDITS.md). Não contém selfies de usuários nem formulários privados. As fotos de cada execução são usadas para aquela solicitação. Antes de publicar, confira os arquivos preparados para o commit para evitar incluir fotos privadas, resultados sem relação ou credenciais. As pastas de saída e de entrada local mais comuns continuam excluídas pelo `.gitignore`.
 

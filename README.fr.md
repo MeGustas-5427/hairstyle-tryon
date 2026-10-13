@@ -8,12 +8,16 @@ Fournissez un selfie et, si vous le souhaitez, une image de la coiffure visée. 
 
 ## Exemples
 
-Résultats de 4 tests avec des photos de banques d’images : 12 essais générés par IA. Ce sont des simulations, pas des photos avant/après de coupes réelles ni des recommandations des personnes représentées. W02 inclut une extension vers le bas ; le cou, les vêtements et le fond ajoutés sont inférés par l’IA.
+8 cas de test sur des portraits, 24 résultats par IA, tous en WebP. Dernière mise à jour : 2026-10-13. Ce sont des simulations visuelles, pas des photos avant/après de coupes réelles ni des recommandations des personnes représentées. La galerie précise la provenance des images, les extensions du cadre et les zones reconstruites.
 
-[Voir les 12 résultats, comparaisons et crédits photo](examples/README.md)
+[Voir les 24 résultats, comparaisons et crédits](examples/README.md)
 
 | Original | Essai par IA |
 | --- | --- |
+| **CNM01**<br><a href="examples/cnm01/original.webp"><img src="examples/cnm01/original.webp" alt="CNM01 Image d’origine" width="320"></a> | **H04 · Coupe wolf bouclée châtain doux**<br><a href="examples/cnm01/h04.webp"><img src="examples/cnm01/h04.webp" alt="CNM01 Essai par IA: Coupe wolf bouclée châtain doux" width="320"></a> |
+| **JPM01**<br><a href="examples/jpm01/original.webp"><img src="examples/jpm01/original.webp" alt="JPM01 Image d’origine" width="320"></a> | **H03 · Boucles en spirale brun foncé froid**<br><a href="examples/jpm01/h03.webp"><img src="examples/jpm01/h03.webp" alt="JPM01 Essai par IA: Boucles en spirale brun foncé froid" width="320"></a> |
+| **KR01**<br><a href="examples/kr01/original.webp"><img src="examples/kr01/original.webp" alt="KR01 Image d’origine" width="320"></a> | **H02 · Carré droit brun beige**<br><a href="examples/kr01/h02.webp"><img src="examples/kr01/h02.webp" alt="KR01 Essai par IA: Carré droit brun beige" width="320"></a> |
+| **JP01**<br><a href="examples/jp01/original.webp"><img src="examples/jp01/original.webp" alt="JP01 Image d’origine" width="320"></a> | **H03 · Dégradé aux clavicules brun rosé · v2**<br><a href="examples/jp01/h03.webp"><img src="examples/jp01/h03.webp" alt="JP01 Essai par IA: Dégradé aux clavicules brun rosé · v2" width="320"></a> |
 | **P02**<br><a href="examples/p02/original.webp"><img src="examples/p02/original.webp" alt="P02 Original" width="320"></a> | **H02 · Frange bouclée**<br><a href="examples/p02/h02.webp"><img src="examples/p02/h02.webp" alt="P02 Essai par IA: Frange bouclée" width="320"></a> |
 | **W02**<br><a href="examples/w02/original.webp"><img src="examples/w02/original.webp" alt="W02 Original" width="320"></a> | **H01 · Carré français châtain chaud**<br><a href="examples/w02/h01.webp"><img src="examples/w02/h01.webp" alt="W02 Essai par IA: Carré français châtain chaud" width="320"></a> |
 | **W03**<br><a href="examples/w03/original.webp"><img src="examples/w03/original.webp" alt="W03 Original" width="320"></a> | **H04 · Carré lisse avec lunettes**<br><a href="examples/w03/h04.webp"><img src="examples/w03/h04.webp" alt="W03 Essai par IA: Carré lisse avec lunettes" width="320"></a> |
@@ -87,7 +91,7 @@ La fiche de coiffure est une note simple à montrer en salon : les caractéristi
 
 ## Validation et utilisation des images
 
-La version de la skill est `v0.1.0`. Quatre tests avec des photos de banques d’images ont produit 12 résultats via imagegen intégré les 2026-09-28 et 2026-10-12 ; les vérifications visuelles et des fichiers sont décrites dans la [galerie](examples/README.md). Le parcours avec un selfie personnel et les résultats de coupes réelles restent à valider. La préservation de l’apparence repose sur les consignes et une vérification visuelle, sans garantie au pixel près.
+La version de la skill est `v0.1.0`. Huit tests sur des portraits ont produit 24 résultats finaux via imagegen intégré les 2026-09-28, 2026-10-12 et 2026-10-13 ; les vérifications visuelles et des fichiers sont décrites dans la [galerie](examples/README.md). Le parcours avec un selfie personnel et les résultats de coupes réelles restent à valider. La préservation de l’apparence repose sur les consignes et une vérification visuelle, sans garantie au pixel près.
 
 Le dépôt contient la skill, sa documentation et des démonstrations sélectionnées dans `examples/`, soumises aux [crédits et conditions d’utilisation des images](examples/CREDITS.md). Il ne contient ni selfies d’utilisateurs ni formulaires privés. Les photos d’une session servent à cette demande. Avant de publier, vérifiez les fichiers préparés pour le commit pour éviter d’inclure des photos privées, des résultats sans rapport ou des identifiants d’accès. Les dossiers de sortie et d’entrée locale courants restent exclus par `.gitignore`.
 

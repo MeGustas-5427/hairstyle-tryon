@@ -8,12 +8,16 @@
 
 ## 作例
 
-ストック写真4件のテストで得られた、実際のAI試着画像12枚です。シミュレーションであり、実際のカット前後の写真や、写っている人物による推薦ではありません。W02では下方向に拡張し、新たに見える首・衣服・背景をAIが推測して補っています。
+人物画像8件のテストによるAI試着結果24枚を、すべてWebPで掲載しています。最終更新：2026-10-13。実際のカット前後の写真や人物による推薦ではなく、見た目のシミュレーションです。元画像の出典、キャンバス拡張、モデルによる補完領域はギャラリーに記載しています。
 
-[全12枚の結果、元写真との比較、写真の出典を見る](examples/README.md)
+[全24枚の結果、元画像との比較、画像の出典を見る](examples/README.md)
 
 | 元の写真 | AI試着 |
 | --- | --- |
+| **CNM01**<br><a href="examples/cnm01/original.webp"><img src="examples/cnm01/original.webp" alt="CNM01 元画像" width="320"></a> | **H04 · 柔らかな栗色のカールウルフ**<br><a href="examples/cnm01/h04.webp"><img src="examples/cnm01/h04.webp" alt="CNM01 AI試着: 柔らかな栗色のカールウルフ" width="320"></a> |
+| **JPM01**<br><a href="examples/jpm01/original.webp"><img src="examples/jpm01/original.webp" alt="JPM01 元画像" width="320"></a> | **H03 · クールなダークブラウンのスパイラルカール**<br><a href="examples/jpm01/h03.webp"><img src="examples/jpm01/h03.webp" alt="JPM01 AI試着: クールなダークブラウンのスパイラルカール" width="320"></a> |
+| **KR01**<br><a href="examples/kr01/original.webp"><img src="examples/kr01/original.webp" alt="KR01 元画像" width="320"></a> | **H02 · ミルクティーベージュブラウンの切りっぱなしボブ**<br><a href="examples/kr01/h02.webp"><img src="examples/kr01/h02.webp" alt="KR01 AI試着: ミルクティーベージュブラウンの切りっぱなしボブ" width="320"></a> |
+| **JP01**<br><a href="examples/jp01/original.webp"><img src="examples/jp01/original.webp" alt="JP01 元画像" width="320"></a> | **H03 · ローズブラウンの鎖骨レイヤー · v2**<br><a href="examples/jp01/h03.webp"><img src="examples/jp01/h03.webp" alt="JP01 AI試着: ローズブラウンの鎖骨レイヤー · v2" width="320"></a> |
 | **P02**<br><a href="examples/p02/original.webp"><img src="examples/p02/original.webp" alt="P02 元の写真" width="320"></a> | **H02 · カールした前髪**<br><a href="examples/p02/h02.webp"><img src="examples/p02/h02.webp" alt="P02 AI試着: カールした前髪" width="320"></a> |
 | **W02**<br><a href="examples/w02/original.webp"><img src="examples/w02/original.webp" alt="W02 元の写真" width="320"></a> | **H01 · 暖かい栗色のフレンチボブ**<br><a href="examples/w02/h01.webp"><img src="examples/w02/h01.webp" alt="W02 AI試着: 暖かい栗色のフレンチボブ" width="320"></a> |
 | **W03**<br><a href="examples/w03/original.webp"><img src="examples/w03/original.webp" alt="W03 元の写真" width="320"></a> | **H04 · 眼鏡を維持したストレートボブ**<br><a href="examples/w03/h04.webp"><img src="examples/w03/h04.webp" alt="W03 AI試着: 眼鏡を維持したストレートボブ" width="320"></a> |
@@ -87,9 +91,9 @@ $hairstyle-tryon で、普段の通勤に合うヘアスタイルを探して。
 
 ## 検証状況と画像の取り扱い
 
-スキルのバージョンは `v0.1.0` です。2026-09-28と2026-10-12にストック写真4件で内蔵 imagegen を使い、12枚の試着画像を生成しました。目視・ファイル確認は[作例ギャラリー](examples/README.md)に記載しています。ユーザー本人の自撮りによる工程や実際のカット・カラーの仕上がりは未検証です。外見の保持は生成指示と目視確認に依存し、ピクセル単位の一致は保証しません。
+スキルのバージョンは `v0.1.0` です。2026-09-28、2026-10-12、2026-10-13に人物画像8件で内蔵 imagegen を使い、24枚の最終試着画像を生成しました。目視・ファイル確認は[作例ギャラリー](examples/README.md)に記載しています。ユーザー本人の自撮りによる工程や実際のカット・カラーの仕上がりは未検証です。外見の保持は生成指示と目視確認に依存し、ピクセル単位の一致は保証しません。
 
-リポジトリにはスキル、文書、`examples/`に選定したストック写真のデモが含まれ、画像にはそれぞれの[出典と利用条件](examples/CREDITS.md)が適用されます。ユーザーの自撮り写真や非公開のフォーム記録は含まれません。実行時の写真はその依頼に使用します。公開前にコミット対象を確認し、個人の写真、無関係な生成結果、認証情報を含めないようにしてください。実行時の出力と一般的な入力フォルダは引き続き `.gitignore` で除外します。
+リポジトリにはスキル、文書、`examples/`に選定した人物画像のデモが含まれ、画像にはそれぞれの[出典と利用条件](examples/CREDITS.md)が適用されます。ユーザーの自撮り写真や非公開のフォーム記録は含まれません。実行時の写真はその依頼に使用します。公開前にコミット対象を確認し、個人の写真、無関係な生成結果、認証情報を含めないようにしてください。実行時の出力と一般的な入力フォルダは引き続き `.gitignore` で除外します。
 
 ## お問い合わせ
 

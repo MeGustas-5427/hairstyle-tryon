@@ -8,12 +8,16 @@ Provide a selfie and, optionally, a target hairstyle image. Codex recommends 4鈥
 
 ## Examples
 
-Actual outputs from 4 stock-photo tests: 12 AI try-on images. These are visual simulations, not real haircut before/after photos or endorsements by the people shown. W02 includes downward canvas extension; newly visible neck, clothing and background are AI-inferred.
+8 portrait test cases, 24 AI try-on results, all in WebP. Latest update: 2026-10-13. These are visual simulations, not real haircut before/after photos or endorsements. The gallery explains source-image provenance, canvas extensions and reconstructed regions.
 
-[View all 12 results, comparisons and photo credits](examples/README.md)
+[View all 24 results, comparisons and image credits](examples/README.md)
 
 | Original | AI try-on |
 | --- | --- |
+| **CNM01**<br><a href="examples/cnm01/original.webp"><img src="examples/cnm01/original.webp" alt="CNM01 Original source" width="320"></a> | **H04 路 Soft chestnut curly wolf cut**<br><a href="examples/cnm01/h04.webp"><img src="examples/cnm01/h04.webp" alt="CNM01 AI try-on: Soft chestnut curly wolf cut" width="320"></a> |
+| **JPM01**<br><a href="examples/jpm01/original.webp"><img src="examples/jpm01/original.webp" alt="JPM01 Original source" width="320"></a> | **H03 路 Cool dark brown spiral curls**<br><a href="examples/jpm01/h03.webp"><img src="examples/jpm01/h03.webp" alt="JPM01 AI try-on: Cool dark brown spiral curls" width="320"></a> |
+| **KR01**<br><a href="examples/kr01/original.webp"><img src="examples/kr01/original.webp" alt="KR01 Original source" width="320"></a> | **H02 路 Milk-tea beige brown blunt bob**<br><a href="examples/kr01/h02.webp"><img src="examples/kr01/h02.webp" alt="KR01 AI try-on: Milk-tea beige brown blunt bob" width="320"></a> |
+| **JP01**<br><a href="examples/jp01/original.webp"><img src="examples/jp01/original.webp" alt="JP01 Original source" width="320"></a> | **H03 路 Rose brown collarbone layers 路 v2**<br><a href="examples/jp01/h03.webp"><img src="examples/jp01/h03.webp" alt="JP01 AI try-on: Rose brown collarbone layers 路 v2" width="320"></a> |
 | **P02**<br><a href="examples/p02/original.webp"><img src="examples/p02/original.webp" alt="P02 Original" width="320"></a> | **H02 路 Curly fringe**<br><a href="examples/p02/h02.webp"><img src="examples/p02/h02.webp" alt="P02 AI try-on: Curly fringe" width="320"></a> |
 | **W02**<br><a href="examples/w02/original.webp"><img src="examples/w02/original.webp" alt="W02 Original" width="320"></a> | **H01 路 Warm chestnut French bob**<br><a href="examples/w02/h01.webp"><img src="examples/w02/h01.webp" alt="W02 AI try-on: Warm chestnut French bob" width="320"></a> |
 | **W03**<br><a href="examples/w03/original.webp"><img src="examples/w03/original.webp" alt="W03 Original" width="320"></a> | **H04 路 Sleek bob with glasses**<br><a href="examples/w03/h04.webp"><img src="examples/w03/h04.webp" alt="W03 AI try-on: Sleek bob with glasses" width="320"></a> |
@@ -87,9 +91,9 @@ The hairstyle brief is a plain-language note you can show your hairdresser: whic
 
 ## Validation and image use
 
-Skill version: `v0.1.0`. Four stock-photo workflows produced 12 images with built-in imagegen on 2026-09-28 and 2026-10-12; visual and file checks are recorded in the [example gallery](examples/README.md). A user-selfie workflow and real haircut results remain unverified. Appearance preservation relies on prompt constraints and visual review, with no guarantee of pixel-level consistency.
+Skill version: `v0.1.0`. Eight portrait workflows produced 24 final images with built-in imagegen on 2026-09-28, 2026-10-12 and 2026-10-13; visual and file checks are recorded in the [example gallery](examples/README.md). A user-selfie workflow and real haircut results remain unverified. Appearance preservation relies on prompt constraints and visual review, with no guarantee of pixel-level consistency.
 
-The repository contains the skill, documentation and selected stock-photo demonstrations in `examples/`, subject to their [photo credits and image terms](examples/CREDITS.md). It contains no user selfies or private form submissions. Runtime photos are used for that request. Before publishing changes, check staged files for private photos, unrelated outputs or credentials. Runtime output folders and common local input folders remain excluded by `.gitignore`.
+The repository contains the skill, documentation and selected portrait demonstrations in `examples/`, subject to their [photo credits and image terms](examples/CREDITS.md). It contains no user selfies or private form submissions. Runtime photos are used for that request. Before publishing changes, check staged files for private photos, unrelated outputs or credentials. Runtime output folders and common local input folders remain excluded by `.gitignore`.
 
 ## Contact
 
